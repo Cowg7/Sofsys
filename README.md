@@ -66,14 +66,14 @@ git push origin feature/nueva-funcionalidad
           git commit -m " se clono el repositorio "
    ## y por ultimo realizamos un push para subir nuestros cambios al repositorio remoto 
           git push origin rama_cc 
-   ## por ultimo verificamos en github y realizamos un pull request para subir los cambios
-   ## y esperamos a que se realize un merge por parte de los colaboradores o el administardor del repositorio.
 
-3. Deployment en azure 
-   ##  creamos un grupo de recursos en azure 
-   ##  seguidamente se crea una nueva aplicacion web estatica
-   ##  procedemos a agregar nuestra cuenta de github
-   ##  agregamos el repositorio a utilizar
-   ##  procedemos a ubicarnos a la rama a utilizar la cual seria la master
-   ##  creamos la apliacion y esperamos a que realize el workflow  de Actions en github
-   
+    por ultimo verificamos en github y realizamos un pull request para subir los cambios
+    y esperamos a que se realize un merge por parte de los colaboradores o el administardor del repositorio.
+
+  3.  Deployment en azure 
+    -creamos un grupo de recursos en azure 
+    -seguidamente se crea una nueva aplicacion web estatica
+    -procedemos a agregar nuestra cuenta de github
+    -agregamos el repositorio a utilizar
+    -procedemos a ubicarnos a la rama a utilizar la cual seria la master
+    -creamos la apliacion y esperamos a que realize el workflow  de Actions en github
