@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+  
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(178, 136, 216);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    
+nav {
+    display: flex;
+}
+    
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+    
+nav ol li {
+    margin: 0 15px;
+}
+    
+nav ol li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+    
+nav ol li a:hover {
+    text-decoration: underline;
+}
+    
+h1 {
+    color: skyblue;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+    
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 5px ;
+}
+    
+.card img {
+    width: 100%;
+    height: auto;
+}
+    
+.card h2, .card p {
+    margin: 10px;
+}
+    
+.card button {
+    position: relative;
+    top: -15px;
+    width: 80px;
+    height: 25px;
+    border-radius: 0.4rem;
+    background-color: rgb(241, 241, 241);
+    border-color: rgb(240, 240, 240);
+    border: none;
+    z-index: 10;
+}
+
+/*FORMULARIO CONTACTO*/
+    
+.contacto{
+    height: 600px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/*Responsive del formulario de contacto*/
+@media (max-width: 660px) {
+    .contacto{
+        height: 600px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+  }
+
+.contenedorContacto{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "contenedorTitulo"
+    "contenedorInfo"
+    "contenedorEnvio";
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.contenedorTitulo{
+    grid-area: contenedorTitulo;
+}
+
+.contenedorInfo{
+    grid-area: contenedorInfo;
+    height: 100%;
+    width: 80%;
+    /*background-color:#058a8f ;*/
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+
+.contenedorEnvio{
+    grid-area: contenedorEnvio; 
+}
+.contenedorDatos{
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorDatosM{
+    height: 100%;
+    width: 80%;
+}
+
+.titulo{
+    color: #000;
+    font-size: auto;
+}
+.inputData{
+    height: 50%;
+    width: 80%;
+    border-bottom: #000;
+    border-radius: 5px;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 1px solid black; /* Borde inferior negro */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra pequeña */
+    
+}
+.inputMensaje{
+    height: 80%;
+    width: 80%;
+    resize: none;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 1px solid black; /* Borde inferior negro */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra pequeña */
+}
+.contenedorEnvio{
+    height: 100%;
+    width: 80%;
+/*background-color:#8dd7da ;*/
+    align-content: center;
+}
+.btnEnviar{
+    height: 80%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btnEnviar:hover{
+    height: 80%;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color: #11c73b;
+    color: #fff;
+    font-size: 15px;
+    transition: 0.3s;
+}
